@@ -5,13 +5,14 @@
 
 ---
 
-![Demo GIF placeholder](./assets/demo.gif)
-**Live demo:** `https://YOUR-DEMO-URL` ← *(insert when available)*
-**Chrome Web Store:** `https://YOUR-STORE-URL` ← *(insert when available)*
+![1 summary](https://github.com/user-attachments/assets/7e287e2c-6df2-4937-9a1a-2be20c596ca7)
+
+![2 deatiled and brief (1)](https://github.com/user-attachments/assets/7d77bc34-49ac-4cb7-99a7-b63c8940d1d2)
+
+**Live demo:** `https://YOUR-DEMO-URL` ← *
 
 ---
 
-## Quick elevator pitch
 
 Summarizer is a compact, practical Chrome extension that extracts article text from the current tab, sends it to an AI backend to produce concise summaries, and stores a short history of recent summaries (page title + date/time + text). It includes a dark/light mode toggle, rounded modern UI, and export/copy conveniences — built to be resume-ready and deployable as a web demo.
 
@@ -19,22 +20,19 @@ Summarizer is a compact, practical Chrome extension that extracts article text f
 
 ## Key features
 
-* Summarize any webpage into three modes (customizable): Pulse / Streamline / Essence (or your chosen labels).
-* Save the last N summaries to a local history (stores `title`, `date/time`, `summary`).
+* Summarize any webpage into two modes (customizable): Quick View / Detailed .
+* Save the last 10 summaries to a local history (stores `title`, `date/time`, `summary`).
 * Dark / Light mode with persistent preference and an icon that toggles (🌙 / ☀️).
-* Copy summary to clipboard; download as `.txt` (optional).
+* Copy summary to clipboard; download as `.txt` .
 * Minimal, responsive UI with modern rounded buttons and subtle animations.
 * Manifest V3 compatible (background service worker, content script message passing).
-* Easy to demo as a web app (for recruiters) or install as an unpacked Chrome extension.
-
 ---
 
 ## Tech stack
 
 * Frontend: HTML, CSS (vanilla), JavaScript (ES6+)
 * Chrome APIs: `chrome.storage`, `chrome.tabs`, content scripts, service worker (background)
-* AI backend: Google Generative Language (Gemini) or any compatible LLM REST endpoint
-* Optional demo hosting: Vercel / Netlify / GitHub Pages (requires small adjustments)
+* AI backend: Gemini AI
 
 ---
 
@@ -50,14 +48,14 @@ Summarizer is a compact, practical Chrome extension that extracts article text f
 /options.js
 /icon.png
 /README.md
-/assets/                 # screenshots, demo gif (not included)
+/assets/                 # screenshots, demo gif 
 ```
 
 ---
 
-## Install & run (developer / recruiter friendly)
+## Install & run 
 
-### 1) Quick local install (unpacked)
+###  Quick local install (unpacked)
 
 1. Clone the repo:
 
@@ -69,17 +67,6 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 3. Enable **Developer mode** (top-right)
 4. Click **Load unpacked** → select the cloned repo folder
 5. Click the extension icon to open the popup.
-
-> Notes: for first use, open **Options** and paste your Gemini/API key.
-
----
-
-### 2) Web demo version (for recruiters — no extension install)
-
-If you host a web demo on Vercel or GitHub Pages, the UI behaves the same as the popup but:
-
-* There is no access to the active tab DOM (so the demo reads text from a textarea or paste box).
-* To protect your API key, use a serverless function (Vercel Function / Netlify Function / simple backend) that holds the key and proxies requests to the AI API.
 
 ---
 
@@ -112,7 +99,7 @@ The extension requests the minimum required:
 "host_permissions": ["<all_urls>"]
 ```
 
-Explain these to recruiters: `activeTab` and `scripting` are used to inject/communicate with the content script; `storage` persists API key and history.
+`activeTab` and `scripting` are used to inject/communicate with the content script; `storage` persists API key and history.
 
 ---
 
@@ -120,19 +107,9 @@ Explain these to recruiters: `activeTab` and `scripting` are used to inject/comm
 
 * **No user data leaves your control** except when you explicitly send page text to the configured AI API.
 * **API key is stored locally** in `chrome.storage.sync` — do not commit it to source control.
-* Recommend: use a paid/managed backend for production to avoid exposing keys in client code. For the demo, use serverless proxy functions to keep keys safe.
 
 ---
 
-## UX / design notes
-
-* Buttons are **rounded (pill-shaped)** with subtle shadow and hover lift for a modern feel.
-* Dropdown & options use `font-weight: 500` for legibility.
-* Dark mode toggles icon and keeps contrast accessible.
-
----
-
-## Resume-friendly bullets (copy-paste)
 
 * Built a Chrome Extension (Manifest V3) that extracts article text and generates AI summaries using remote LLMs.
 * Implemented persistent local history (title + timestamp + summary), dark/light mode, and accessible UI with modern styling.
@@ -142,20 +119,7 @@ Explain these to recruiters: `activeTab` and `scripting` are used to inject/comm
 
 ## Screenshots / GIF
 
-![summary1](https://github.com/user-attachments/assets/3a2f80a6-602d-4ab0-8b6e-01c8d3ecdd06)
-![2 deatiled and brefif](https://github.com/user-attachments/assets/93d616f0-77a5-44b8-8b6e-f9956af37daf)
 
-
----
-
-## Troubleshooting & FAQ
-
-* **Q:** The extension returns “Could not extract article text.”
-  **A:** Try on a standard article page. For complex pages, enable “Readability” in future versions or manually paste text in demo.
-* **Q:** My API key isn’t working.
-  **A:** Verify your Gemini/API key is valid and not rate-limited. For web demo, ensure your serverless proxy is set up correctly.
-* **Q:** How many summaries are saved?
-  **A:** Default keeps last 10 (configurable in `popup.js`).
 
 ---
 
@@ -169,15 +133,8 @@ PRs welcome. Suggested starter tasks:
 
 ---
 
-## License
-
-`MIT` — use, modify, and share. Please keep attribution in `README.md`.
-
----
-
 ## Contact
 
-Developer: **YOUR NAME**
-GitHub: `https://github.com/YOUR_USERNAME`
-Email: `you@example.com`
+Developer: **ANMOL SINGH RANA**
+GitHub: `https://github.com/Anmol-Repo`
 
