@@ -1,15 +1,16 @@
 # Summarizer — The WebPage with AI
 
-> AI-powered webpage summarizer — extract the gist of any article, save summary history (with page title + timestamp), and read comfortably with dark mode.
-> *Polished, lightweight Chrome extension (Manifest V3) + a web demo option.*
+### AI-powered webpage summarizer — extract the gist of any article, save summary history, and read comfortably with dark mode. Polished, lightweight Chrome extension (Manifest V3).
+
 
 ---
+## Screenshots / GIF
 
 ![1 summary](https://github.com/user-attachments/assets/7e287e2c-6df2-4937-9a1a-2be20c596ca7)
 
 ![2 deatiled and brief (1)](https://github.com/user-attachments/assets/7d77bc34-49ac-4cb7-99a7-b63c8940d1d2)
 
-**Live demo:** `https://YOUR-DEMO-URL` ← *
+![history](https://github.com/user-attachments/assets/ec629648-7c83-4d13-a677-4c1d2b789bd7)
 
 ---
 
@@ -20,7 +21,7 @@ Summarizer is a compact, practical Chrome extension that extracts article text f
 
 ## Key features
 
-* Summarize any webpage into two modes (customizable): Quick View / Detailed .
+* Summarize any webpage into two modes (customizable): **Quick View** / **Detailed** .
 * Save the last 10 summaries to a local history (stores `title`, `date/time`, `summary`).
 * Dark / Light mode with persistent preference and an icon that toggles (🌙 / ☀️).
 * Copy summary to clipboard; download as `.txt` .
@@ -32,7 +33,7 @@ Summarizer is a compact, practical Chrome extension that extracts article text f
 
 * Frontend: HTML, CSS (vanilla), JavaScript (ES6+)
 * Chrome APIs: `chrome.storage`, `chrome.tabs`, content scripts, service worker (background)
-* AI backend: Gemini AI
+* Backend: Gemini AI API
 
 ---
 
@@ -114,12 +115,6 @@ The extension requests the minimum required:
 * Built a Chrome Extension (Manifest V3) that extracts article text and generates AI summaries using remote LLMs.
 * Implemented persistent local history (title + timestamp + summary), dark/light mode, and accessible UI with modern styling.
 * Used Chrome Storage API, content scripts, message passing, and a Manifest V3 service worker.
-
----
-
-## Screenshots / GIF
-
-
 
 ---
 
