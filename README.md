@@ -1,6 +1,6 @@
 # Summarizer — The WebPage with AI
 
-### AI-powered webpage summarizer — extract the gist of any article, save summary history, and read comfortably with dark mode. Polished, lightweight Chrome extension (Manifest V3).
+## AI-powered webpage summarizer — extract the gist of any article, save summary history, and read comfortably with dark mode. Polished, lightweight Chrome extension (Manifest V3).
 
 
 ---
