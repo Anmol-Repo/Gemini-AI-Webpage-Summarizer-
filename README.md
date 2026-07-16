@@ -63,6 +63,8 @@ Summarizer is a compact, practical Chrome extension that extracts article text f
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 ```
+<img width="1070" height="704" alt="chrome_extension_1" src="https://github.com/user-attachments/assets/f02a3370-91d2-4fb1-a0bc-e31f59307564" />
+
 
 2. Open Chrome → `chrome://extensions/`
 3. Enable **Developer mode** (top-right)
