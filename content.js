@@ -5,6 +5,7 @@ function getArticleText() {
 
  const paragraphs = Array.from(document.querySelectorAll("p"));
  return paragraphs.map((p) => p.innerText).join("\n");
+    
 
 }
 
